@@ -83,7 +83,7 @@ a:hover, a:active {
     float: left;
 }
 
-.top-content {
+.article-content {
     background-color: rgba(255,255,255,0.5);
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -92,40 +92,18 @@ a:hover, a:active {
     margin-top: 2%;
 }
 
-.bottom-content {
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    padding: 3% 5%;
-    margin-top: 2%;
+.article-header h2 {
+    text-shadow: 1px 1px #999;
 }
 
-.top-sidebar {
-    width: 22%;
-    float: left;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin-top: 1.5%;
-    margin-left: 2%;
-    padding: 2% 3%;
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 90%;
+    text-shadow: 1px 1px #fff;
 }
 
-.mid-sidebar {
-    width: 22%;
-    float: left;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin-top: 1.5%;
-    margin-left: 2%;
-    padding: 2% 3%;
-}
-
-.bottom-sidebar {
+.sidebar {
     width: 22%;
     float: left;
     background-color: rgba(255,255,255,0.5);
@@ -141,15 +119,64 @@ a:hover, a:active {
     width: 100%;
     float: left;
     background-color: #52a4ff;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 0;
 }
 
 .main-footer p {
     color: #fff;
     width: 92%;
     margin: 2% auto;
+}
+
+/* For screens width 150px to 720px */
+@media only screen and (min-width: 150px) and (max-width: 720px) {
+    .wrapper {
+        width: 90%;
+        font-size: 95%;
+    }
+
+    .main-header img {
+        width: 100%;
+    }
+
+    .main-header nav {
+        height: 160px;
+    }
+
+    .main-header nav ul {
+        padding-left: 0;
+    }
+
+    .main-header nav ul li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .main-header nav a:link, .main-header nav a:visited {
+        padding: 10px 20px;
+        height: 20px;
+        display: block;
+    }
+
+    .content {    
+        width: 100%;
+        float: left;
+        margin-top: 2%;
+    }
+
+    .post-info {
+        display: none;
+    }
+
+    .sidebar {
+        width: 94%;
+        margin-top: 2%;
+        margin-left: 0;
+        padding: 2% 3%;
+    }
 }
