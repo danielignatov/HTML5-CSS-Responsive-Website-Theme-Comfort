@@ -1,0 +1,53 @@
+/* Code written by Daniel Ignatov */
+/* ** http://danielignatov.com ** */
+
+body {
+    background-color: #ffffff;
+    color: #000305;
+    font-size: 87.5%;
+    font-family: Arial, "lucida Sans Unicode";
+    line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+
+}
+
+a:hover, a:active {
+    
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+    clear: both;
+}
+
+.main-header img {
+    width: 30%;
+    height: auto;
+    margin: 2% 0;
+}
+
+.main-header nav {
+    background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.main-header nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.main-header nav ul li {
+    float: left;
+    display: inline;
+}
