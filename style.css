@@ -2,7 +2,12 @@
 /* ** http://danielignatov.com ** */
 
 body {
-    background-color: #ffffff;
+    /* Background */
+    background: #d6fff2; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#d6fff2, #99ffe0, #80eeee); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#d6fff2, #99ffe0, #80eeee); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#d6fff2, #99ffe0, #80eeee); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#d6fff2, #99ffe0, #80eeee); /* Standard syntax */
     color: #000305;
     font-size: 87.5%;
     font-family: Arial, "lucida Sans Unicode";
@@ -12,14 +17,17 @@ body {
 
 a {
     text-decoration: none;
+    color: #80eeee;
 }
 
 a:link, a:visited {
-
+    text-decoration: none;
+    color: #80eeee;
 }
 
 a:hover, a:active {
-    
+    text-decoration: none;
+    color: white;
 }
 
 .wrapper {
@@ -35,7 +43,7 @@ a:hover, a:active {
 }
 
 .main-header nav {
-    background-color: #666;
+    background-color: #52a4ff;
     height: 40px;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -48,6 +56,100 @@ a:hover, a:active {
 }
 
 .main-header nav ul li {
-    float: left;
     display: inline;
+}
+
+.main-header nav a:link, .main-header nav a:visited {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 20px;
+}
+
+.main-header nav a:hover, .main-header nav a:active, .main-header nav .active a:link, .main-header nav .active a:visited {
+    background-color: #80eeee;
+    text-shadow: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.main-content {
+    line-height: 25px;
+}
+
+.content {    
+    width: 70%;
+    float: left;
+}
+
+.top-content {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.bottom-content {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.top-sidebar {
+    width: 22%;
+    float: left;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    padding: 2% 3%;
+}
+
+.mid-sidebar {
+    width: 22%;
+    float: left;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    padding: 2% 3%;
+}
+
+.bottom-sidebar {
+    width: 22%;
+    float: left;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    padding: 2% 3%;
+}
+
+.main-footer {
+    width: 100%;
+    float: left;
+    background-color: #52a4ff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main-footer p {
+    color: #fff;
+    width: 92%;
+    margin: 2% auto;
 }
