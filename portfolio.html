@@ -8,6 +8,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Flickity carousel -->
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
 </head>
 
 <body>
@@ -16,13 +18,35 @@
             <img src="img/logo.png" alt="logo" />
             <nav>
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- Flickity carousel -->
+        <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+            <img src="img/hamburg2.jpg" alt="hamburg city" />
+            <img src="img/hamburg1.jpg" alt="hamburg city" />
+            <img src="img/railway-station.jpg" alt="railway station" />
+        </div>
+        <script src="js/flickity.pkgd.min.js"></script>
+
+        <article class="fullpage-article">
+            <content>
+                <p>These beautiful images in the carousel were shot by <strong>Michael Krämer</strong> and supplied with <strong>CC0 Public Domain</strong> to use in this project.</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                    are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                    in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                    as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                    Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+                    words etc.</p>
+            </content>
+        </article>
 
         <footer class="main-footer">
             <p>
